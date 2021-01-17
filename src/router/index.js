@@ -21,7 +21,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
+  mode: 'hash', // WARN: from electron-builder, It is detected that you are using Vue Router. It must function in hash mode to work in Electron. Learn more at https://goo.gl/GM1xZG .
   base: process.env.BASE_URL,
   routes
 })
